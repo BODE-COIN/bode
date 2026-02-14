@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BODE Coin – Meme with Roots</title>
+  <meta name="description" content="BODE is a Solana-native meme coin launched on pump.fun. Fun, fast, and built for long-term community growth." />
+  <meta property="og:title" content="BODE Coin – Meme with Roots" />
+  <meta property="og:description" content="BODE is a Solana-native meme coin launched on pump.fun. Fun, fast, and built for long-term community growth." />
+  <meta property="og:image" content="bode-logo.png" />
+  <link rel="icon" href="bode-logo.png" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121826;
+      --accent: #00e5ff;
+      --gold: #c9a24d;
+      --text: #e6eaf2;
+      --muted: #9aa4b2;
+    }* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 80% -10%, #12203a 0%, transparent 60%), var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  padding: 2rem 1.5rem 4rem;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(135deg, rgba(0,229,255,0.1), rgba(0,0,0,0));
+  border-radius: 16px;
+}
+
+header img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 12px rgba(0,229,255,0.6));
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% { filter: drop-shadow(0 0 8px rgba(0,229,255,0.4)); }
+  50% { filter: drop-shadow(0 0 22px rgba(0,229,255,0.9)); }
+  100% { filter: drop-shadow(0 0 8px rgba(0,229,255,0.4)); }
+}
+
+header h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0.5rem 0;
+  letter-spacing: 0.05em;
+}
+
+header p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.meme-banner {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #c9a24d;
+}
+
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta a {
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cta a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0,229,255,0.7);
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--accent), #4de7c8);
+  color: #001014;
+}
+
+.secondary {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+section {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: linear-gradient(180deg, #141b2e, var(--card));
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(0,229,255,0.4);
+  background: linear-gradient(180deg, #141b2e, rgba(0,229,255,0.05));
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+.card:hover h3 {
+  color: #4de7c8;
+}
+
+.card p a {
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.card p a:hover {
+  color: #4de7c8;
+}
+
+button.copy-btn {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #00e5ff;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+button.copy-btn:hover {
+  background: #4de7c8;
+}
+
+footer {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+footer span {
+  color: var(--gold);
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  top: -10px;
+  left: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+  </style>
+</head>
+<body>  <header>
+    <img src="bode-logo.png" alt="BODE Coin Logo" />
+    <h1>BODE</h1>
+    <p>A meme coin with roots 🌱 Born on pump.fun, growing on Solana. Built for culture today and holders tomorrow.</p>
+    <div class="meme-banner">Degens Welcome 😎</div>
+    <div class="cta">
+      <a href="https://pump.fun/coin/7bb9pPQPN8WHogRTUaCwAqdaF65PvtHyqMp3pjHtpump" target="_blank" class="primary">🚀 Buy on pump.fun</a>
+      <a href="#" class="secondary">View Whitepaper</a>
+    </div>
+  </header>  <section>
+    <div class="grid">
+      <div class="card">
+        <h3>🌳 Meme with Roots</h3>
+        <p>BODE is fun on the surface, serious underneath — a meme coin designed for longevity.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Solana Speed</h3>
+        <p>Ultra-fast transactions and near-zero fees powered by the Solana blockchain.</p>
+      </div>
+      <div class="card">
+        <h3>🔥 Fair Launch Energy</h3>
+        <p>No VC games, no hidden allocations — the community grows BODE together.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Long-Term Vision</h3>
+        <p>Memes bring attention. Vision keeps it alive. BODE is here for the long run.</p>
+      </div>
+    </div>
+  </section>  <section>
+    <div class="card roadmap">
+      <h3>Roadmap</h3>
+      <p style="color:#00e5ff;"><strong>Phase 1 — Meme Roots 🌱</strong><br/>Launch on pump.fun, build culture, spread memes.</p>
+      <p style="color:#4de7c8;"><strong>Phase 2 — Community Growth 🌿</strong><br/>Graduate, liquidity growth, community events.</p>
+      <p style="color:#c9a24d;"><strong>Phase 3 — Long-Term Vision 🌳</strong><br/>Ecosystem ideas, partnerships, longevity.</p>
+      <p>View live on <a href="https://solscan.io/token/7bb9pPQPN8WHogRTUaCwAqdaF65PvtHyqMp3pjHtpump" target="_blank">Solana Explorer</a></p>
+    </div>
+  </section>  <section>
+    <div class="card">
+      <h3>Token Overview</h3>
+      <p><strong>Name:</strong> BODE</p>
+      <p><strong>Symbol:</strong> BODE</p>
+      <p><strong>Chain:</strong> Solana</p>
+      <p><strong>Type:</strong> Meme Coin (Long-Term)</p>
+      <p><strong>Total Supply:</strong> Define in contract</p>
+      <p><strong>Mint Address:</strong> <span id="mint" style="word-break:break-all;">7bb9pPQPN8WHogRTUaCwAqdaF65PvtHyqMp3pjHtpump</span></p>
+      <button class="copy-btn" onclick="navigator.clipboard.writeText('7bb9pPQPN8WHogRTUaCwAqdaF65PvtHyqMp3pjHtpump'); alert('Copied!');">Copy Address</button>
+      <p><strong>Liquidity:</strong> Community Driven</p>
+      <p>View live on <a href="https://solscan.io/token/7bb9pPQPN8WHogRTUaCwAqdaF65PvtHyqMp3pjHtpump" target="_blank">Solana Explorer</a></p>
+    </div>
+  </section>  <footer>
+    <p>© <span>BODE</span> Coin. All rights reserved.</p>
+  </footer>  <script>
+    // Confetti effect
+    for(let i=0;i<50;i++){
+      let conf = document.createElement('div');
+      conf.className='confetti';
+      conf.style.left=Math.random()*100+'vw';
+      conf.style.backgroundColor=['#00e5ff','#4de7c8','#c9a24d'][Math.floor(Math.random()*3)];
+      document.body.appendChild(conf);
+    }
+  </script></body>
+</html>
